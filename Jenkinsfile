@@ -18,7 +18,7 @@ pipeline {
     }
     stage('Deploy') {
       steps {
-        bat 'copy enterprise_errorlogger_service\\target\\enterprise_errorlogger-1.0.0-SNAPSHOT-mule-application.jar F:\\mule_server\\mule-enterprise-standalone-4.2.1\\apps'
+        bat 'copy target\\*.jar F:\\mule_server\\mule-enterprise-standalone-4.2.1\\apps'
       }
     }
   }
